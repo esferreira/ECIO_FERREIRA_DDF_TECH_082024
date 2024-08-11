@@ -1,0 +1,79 @@
+Quadro Kanban para o Projeto de Análise de Dados E-commerce com a Base Olist
+Objetivo:
+
+Gerenciar as tarefas e o progresso do projeto de análise de dados utilizando a base Olist e a plataforma Dadosfera, visando otimizar a tomada de decisões e a eficiência operacional do cliente.
+
+Colunas:
+
+Backlog:
+Definir KPIs e métricas de sucesso
+Realizar análise exploratória dos dados
+Identificar perguntas de negócio relevantes
+
+A Fazer:
+Download da base de dados Olist
+Configurar conexão com a Dadosfera
+Carregar dados na Dadosfera
+Criar catálogo de dados
+Organizar dados em zonas do Data Lake
+Analisar a qualidade dos dados
+Realizar limpeza e transformação dos dados
+Aplicar técnicas de GenAI e LLMs para extrair features
+Modelar os dados (criar modelo dimensional)
+Desenvolver pipelines de ETL
+
+Em Revisão:
+Criar dashboards e visualizações no Metabase
+Desenvolver Data Apps com Streamlit
+Preparar apresentação final do projeto
+
+Concluído:
+Apresentar o projeto ao cliente
+Coletar feedback e realizar ajustes
+Implantar a solução em produção
+Monitorar o desempenho e realizar melhorias contínuas
+
+Análises de Risco:
+
+Qualidade dos dados:
+Impacto: Atraso na análise, resultados imprecisos, decisões equivocadas
+Mitigação: Análise de qualidade rigorosa, limpeza e transformação dos dados, monitoramento contínuo
+
+Complexidade da modelagem:
+Impacto: Dificuldade na criação de consultas e relatórios, desempenho insatisfatório
+Mitigação: Modelagem clara e bem estruturada, otimização de consultas, uso de índices
+
+Desempenho da plataforma:
+Impacto: Lentidão no processamento e visualização dos dados, frustração do usuário
+Mitigação: Monitoramento do desempenho, otimização de recursos, escalabilidade da plataforma
+
+Requisitos em constante mudança:
+Impacto: Retrabalho, atrasos no cronograma, aumento de custos
+Mitigação: Metodologia ágil, comunicação clara com o cliente, flexibilidade na adaptação
+
+Estimativas de Custos: ?
+
+Recursos Humanos:
+Analista de dados
+Engenheiro de dados
+Cientista de dados
+Especialista em visualização de dados
+
+Infraestrutura:
+Assinatura da plataforma Dadosfera
+Armazenamento em nuvem
+Servidores para hospedagem de Data Apps
+
+Ferramentas:
+Licenças de software (Python, bibliotecas de análise, etc.)
+
+Alocação de Recursos:
+Analista de dados: Responsável pela análise exploratória, modelagem de dados e criação de visualizações.
+Engenheiro de dados: Responsável pela integração, limpeza, transformação e desenvolvimento de pipelines de dados.
+Cientista de dados: Responsável pela aplicação de técnicas de GenAI e LLMs, e desenvolvimento de modelos de Machine Learning.
+Especialista em visualização de dados: Responsável pela criação de dashboards e Data Apps interativos e intuitivos.
+Interdependências e Pontos Críticos:
+
+Qualidade dos dados: A qualidade dos dados impacta todas as etapas subsequentes do projeto, sendo crucial garantir a sua integridade e confiabilidade desde o início.
+Modelagem de dados: A modelagem de dados é fundamental para a criação de consultas eficientes e visualizações eficazes, sendo um ponto crítico para o sucesso do projeto.
+Desenvolvimento de pipelines: Os pipelines automatizam o processamento dos dados, garantindo a atualização e a consistência das informações, sendo essenciais para a manutenção da solução
