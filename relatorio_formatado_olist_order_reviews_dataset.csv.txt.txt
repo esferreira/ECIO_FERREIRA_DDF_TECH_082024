@@ -1,0 +1,10 @@
+Relatório de Validação de Dados - Tabela: olist_order_reviews_dataset.csv.txt
+
+Coluna: review_id, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: order_id, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: review_score, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: review_score, Expectativa: expect_column_values_to_be_between, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: review_creation_date, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: review_creation_date, Expectativa: expect_column_values_to_match_strftime_format, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: review_answer_timestamp, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: review_answer_timestamp, Expectativa: expect_column_values_to_match_strftime_format, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0

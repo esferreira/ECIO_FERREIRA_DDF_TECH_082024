@@ -1,0 +1,7 @@
+Relatório de Validação de Dados - Tabela: olist_geolocation_dataset.csv.txt
+
+Coluna: geolocation_zip_code_prefix, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: geolocation_lat, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: geolocation_lng, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: geolocation_city, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: geolocation_state, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0

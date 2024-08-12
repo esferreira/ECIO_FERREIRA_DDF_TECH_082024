@@ -1,0 +1,8 @@
+Relatório de Validação de Dados - Tabela: olist_products_dataset.csv.txt
+
+Coluna: product_id, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: product_weight_g, Expectativa: expect_column_values_to_be_between, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 2
+Coluna: product_length_cm, Expectativa: expect_column_values_to_be_between, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 2
+Coluna: product_height_cm, Expectativa: expect_column_values_to_be_between, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 2
+Coluna: product_width_cm, Expectativa: expect_column_values_to_be_between, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 2
+Coluna: product_photos_qty, Expectativa: expect_column_values_to_be_between, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 610

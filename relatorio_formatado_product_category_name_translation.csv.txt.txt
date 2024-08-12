@@ -1,0 +1,4 @@
+Relatório de Validação de Dados - Tabela: product_category_name_translation.csv.txt
+
+Coluna: product_category_name, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: product_category_name_english, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0

@@ -1,0 +1,12 @@
+Relatório de Validação de Dados - Tabela: olist_orders_dataset.csv.txt
+
+Coluna: order_id, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: customer_id, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: order_status, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: order_status, Expectativa: expect_column_values_to_be_in_set, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: order_purchase_timestamp, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: order_purchase_timestamp, Expectativa: expect_column_values_to_match_strftime_format, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: order_estimated_delivery_date, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: order_approved_at, Expectativa: expect_column_values_to_match_strftime_format, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 160
+Coluna: order_delivered_carrier_date, Expectativa: expect_column_values_to_match_strftime_format, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 1783
+Coluna: order_delivered_customer_date, Expectativa: expect_column_values_to_match_strftime_format, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 2965

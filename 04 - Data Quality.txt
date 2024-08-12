@@ -1,0 +1,46 @@
+No processo de garantia da qualidade dos dados, foram desenvolvidos dois scripts Python que trabalham em conjunto para realizar uma análise de qualidade de dados completa nos arquivos CSV do conjunto de dados da Olist. Decide analisar os dados a partir dos arquivos CSV pois não seria possível utilizar a plataforma da Dadosfera para essa análise no momento devido a restrições de acesso a seção Processar - Transformação.
+
+Foi criado um diretório chamado 04 - Data Quality com dois arquivos dentro.
+a. qualidadededados.py 
+b. relatorio.py
+
+O primeiro script utiliza a biblioteca Great Expectations para definir e validar expectativas de qualidade de dados para cada arquivo CSV. Ele verificaa se os valores em colunas importantes não são nulos, se os valores numéricos estão dentro de intervalos esperados, e se os valores de texto estão dentro de conjuntos esperados. Este script gera um arquivo JSON de expectativas e um arquivo de texto de resultados para cada arquivo CSV.
+
+Resumo das expectativas para cada um dos arquivos.
+
+1. Clientes: Esperar que todos os valores em todas as colunas não sejam nulos.
+2. Geolocalização: Esperar que todos os valores em todas as colunas não sejam nulos. Além disso, esperar que `geolocation_lat` e `geolocation_lng` estejam dentro dos intervalos de latitude e longitude válidos para o Brasil.
+3. Itens do Pedido: Esperar que todos os valores em `order_id`, `order_item_id`, `product_id`, `seller_id` e `shipping_limit_date` não sejam nulos. Além disso, esperar que `price` e `freight_value` sejam valores numéricos positivos.
+4. Pagamentos do Pedido: Esperar que todos os valores em todas as colunas não sejam nulos. Além disso, esperar que `payment_sequential` e `payment_installments` sejam valores inteiros positivos, e que `payment_value` seja um valor numérico positivo.
+5. Avaliações do Pedido: Esperar que todos os valores em `review_id`, `order_id`, `review_score`, `review_creation_date` e `review_answer_timestamp` não sejam nulos. Além disso, esperar que `review_score` esteja dentro do intervalo de 1 a 5.
+6. Pedidos: Esperar que todos os valores em todas as colunas não sejam nulos. Além disso, esperar que `order_status` esteja dentro dos valores esperados (por exemplo, 'delivered', 'shipped', etc.).
+7. Produtos: Esperar que todos os valores em todas as colunas não sejam nulos. Além disso, esperar que `product_weight_g`, `product_length_cm`, `product_height_cm` e `product_width_cm` sejam valores numéricos positivos, e que `product_photos_qty` seja um valor inteiro não negativo.
+8. Vendedores: Esperar que todos os valores em todas as colunas não sejam nulos.
+9. Tradução do Nome da Categoria do Produto: Esperar que todos os valores em todas as colunas não sejam nulos.
+
+O segundo script lê os arquivos de resultados gerados pelo primeiro script e cria um relatório de validação de dados formatado para cada tabela. Ele extrai informações relevantes de cada resultado de expectativa, como o nome da coluna, o tipo de expectativa, se a expectativa foi bem-sucedida, e o número de valores inesperados e ausentes.
+
+Esses scripts permitem uma análise de qualidade de dados eficiente e automatizada que pode economizar tempo e recursos significativos. Além disso, eles fornecem uma maneira fácil de monitorar continuamente a qualidade dos dados e ajustar as regras de validação conforme necessário. Esta abordagem otimiza o tempo e os recursos da plataforma Dadosfera, pois só seria necessário tratamento para 8 colunas das 52 que compõem essa base de dados da Olist.
+
+O Common Data Model (CDM) poderia ser definido da seguinte maneira:
+
+O esquema do banco de dados é fornecido pelo próprio mantenedor da base de dados como se pode ver aqui olist.png
+
+1. Clientes (`olist_customers_dataset.csv`): Cada cliente é identificado por um `customer_id` único. Outros atributos incluem `customer_unique_id`, `customer_zip_code_prefix`, `customer_city` e `customer_state`.
+
+2. Geolocalização (`olist_geolocation_dataset.csv`): Cada entrada representa uma localização geográfica identificada por um `geolocation_zip_code_prefix`. Outros atributos incluem `geolocation_lat`, `geolocation_lng`, `geolocation_city` e `geolocation_state`.
+
+3. Itens do Pedido (`olist_order_items_dataset.csv`): Cada item do pedido é identificado por um `order_id` e um `order_item_id`. Outros atributos incluem `product_id`, `seller_id`, `shipping_limit_date`, `price` e `freight_value`.
+
+4. Pagamentos do Pedido (`olist_order_payments_dataset.csv`): Cada pagamento do pedido é identificado por um `order_id` e um `payment_sequential`. Outros atributos incluem `payment_type`, `payment_installments` e `payment_value`.
+
+5. Avaliações do Pedido (`olist_order_reviews_dataset.csv`): Cada avaliação do pedido é identificada por um `review_id` e um `order_id`. Outros atributos incluem `review_score`, `review_comment_title`, `review_comment_message`, `review_creation_date` e `review_answer_timestamp`.
+
+6. Pedidos (`olist_orders_dataset.csv`): Cada pedido é identificado por um `order_id`. Outros atributos incluem `customer_id`, `order_status`, `order_purchase_timestamp`, `order_approved_at`, `order_delivered_carrier_date`, `order_delivered_customer_date` e `order_estimated_delivery_date`.
+
+7. Produtos (`olist_products_dataset.csv`): Cada produto é identificado por um `product_id`. Outros atributos incluem `product_category_name`, `product_name_lenght`, `product_description_lenght`, `product_photos_qty`, `product_weight_g`, `product_length_cm`, `product_height_cm` e `product_width_cm`.
+
+8. Vendedores (`olist_sellers_dataset.csv`): Cada vendedor é identificado por um `seller_id`. Outros atributos incluem `seller_zip_code_prefix`, `seller_city` e `seller_state`.
+
+9. Tradução do Nome da Categoria do Produto (`product_category_name_translation.csv`): Cada entrada representa uma categoria de produto identificada por um `product_category_name`. Outro atributo é `product_category_name_english`.
+

@@ -1,0 +1,27 @@
+Para este case, será utilizada a base de dados "Olist E-commerce Dataset", disponível publicamente no Kaggle. 
+Esta base é rica em informações sobre transações de e-commerce, incluindo dados de clientes, pedidos, produtos, pagamentos e avaliações, o que a torna ideal para o cenário proposto.
+
+Justificativa:
+
+Relevância para o cenário: A base Olist representa diretamente o domínio de e-commerce, permitindo análises e insights específicos para este setor.
+Volume de dados: A base possui mais de 100.000 registros, atendendo ao requisito mínimo.
+Diversidade de dados: A variedade de tabelas e atributos possibilita análises complexas e exploração de diferentes aspectos do negócio.
+Disponibilidade: A base é de acesso público, facilitando o download e a integração na Dadosfera.
+
+Cenários de uso possíveis com a base Olist:
+
+Análise do comportamento de compra dos clientes
+Segmentação de clientes
+Previsão de demanda
+Otimização de preços
+Recomendação de produtos
+Análise de sentimentos em avaliações
+Detecção de fraudes
+
+Neste case em específico irei explorar o item Análise do comportamento de compra dos clientes
+
+Este será o foco principal do case. Compreender o comportamento de compra dos clientes é fundamental para qualquer negócio de e-commerce. Isso pode revelar insights valiosos sobre as preferências, hábitos e necessidades dos clientes, o que pode ajudar a empresa a personalizar suas ofertas, melhorar a experiência do cliente e aumentar as vendas. Além disso, com minha experiência em modelagem de dados, ETL e integração de dados, posso preparar e analisar os dados de comportamento do cliente de maneira eficaz.
+
+Link da página de download da Base de dados https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+No repositório consta um arquivo compactado com os datasets da Olist.

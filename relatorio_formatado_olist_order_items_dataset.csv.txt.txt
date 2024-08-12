@@ -1,0 +1,11 @@
+Relatório de Validação de Dados - Tabela: olist_order_items_dataset.csv.txt
+
+Coluna: order_id, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: order_item_id, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: product_id, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: seller_id, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: shipping_limit_date, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: price, Expectativa: expect_column_values_to_be_of_type, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: price, Expectativa: expect_column_values_to_be_between, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: freight_value, Expectativa: expect_column_values_to_be_of_type, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: freight_value, Expectativa: expect_column_values_to_be_between, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0

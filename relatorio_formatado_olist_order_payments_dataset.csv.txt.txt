@@ -1,0 +1,13 @@
+Relatório de Validação de Dados - Tabela: olist_order_payments_dataset.csv.txt
+
+Coluna: order_id, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: payment_sequential, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: payment_sequential, Expectativa: expect_column_values_to_be_of_type, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: payment_type, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: payment_type, Expectativa: expect_column_values_to_be_in_set, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: payment_installments, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: payment_installments, Expectativa: expect_column_values_to_be_of_type, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: payment_installments, Expectativa: expect_column_values_to_be_between, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: payment_value, Expectativa: expect_column_values_to_not_be_null, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: payment_value, Expectativa: expect_column_values_to_be_of_type, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
+Coluna: payment_value, Expectativa: expect_column_values_to_be_between, Sucesso: True, Valores Inesperados: 0, Valores Ausentes: 0
